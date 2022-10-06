@@ -1,26 +1,14 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2022/10/06 14:47:59
-// Design Name: 
-// Module Name: HalfAdder
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module HalfAdder(
+    input i_a, i_b,
 
+    output o_sum, o_carry 
     );
+    
+    assign o_sum = i_a ^ i_b;
+    assign o_carry = i_a & i_b;
+    
+
 endmodule
+
