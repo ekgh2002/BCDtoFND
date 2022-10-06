@@ -11,7 +11,7 @@ module Calculator(
 
     wire [3:0] w_result;
 
-    Simple_Calculator U0(
+    SimpleCaculator U0(
         .i_a(i_a),
         .i_b(i_b),    
         .i_selOperator(i_selOperator),
